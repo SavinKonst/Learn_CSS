@@ -1,25 +1,30 @@
-<!--CSS3 #1 Базовый синтаксис и применение стилей (Base Syntax & CSS Applying)-->
+<!--CSS3 #2 Простые селекторы (Simple Selectors)-->
 <!DOCTYPE html>
 <html lang="en">
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>CSS3 #1 Base Syntax & CSS Applying</title>
-        <style>
-            h1{
-                color: brown;
-            }
-        </style>
+        <title>CSS3 #2 Simple Selectors</title>
         <link rel="stylesheet" href="/css/style.css">
     </head>
     <body>
-        <p>Inner style</p>
-        <h1>Hello, World!</h1>
-        <p>External style</p>
-        <h2>Hello, World!</h2>
-        <p>Inline style</p>
-        <h3 style="color: blue;">Hello, World!</h3>
-        <p>External styles with import from another file</p>
-        <h4>Hello, World!</h4>
+        <h1 class="simple">Hello, world!</h1>
+        <p>Text paragraph</p>
+        <p class="fz20">Text paragraph</p>
+        <p class="fz20">Text paragraph</p>
+        <h2 class="heading1 fz20">Heading 1</h2>
+        <span class="heading2">Simple span element</span>
+        <h3 id="heading">Hello, world!</h3>
+        <q class="simple">Hello World!</q>
+        <!--
+        
+        Selector Specificity
+        
+        1000 - inline style
+        100 - ID
+        10 - class, attribute, pseudoclass
+        1 - element, pseudoelement     
+        
+        -->
     </body>
 </html>
