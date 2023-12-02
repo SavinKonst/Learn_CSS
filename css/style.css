@@ -1,32 +1,48 @@
-* {
+h1,
+h2,
+span {
     color: red;
 }
 
-.heading1 {
-    text-decoration: underline;
+div p {
+    color: green;
 }
 
-.heading2 {
-    text-transform: uppercase;
-}
-
-.fz20 {
-    font-size: 20px;
-}
-
-#heading {
-    font-size: 40px;
-    border: 1px solid black;
-}
-
-q {
+div p span {
     color: blue;
 }
 
-q.simple {
+ul li > span {
+font-weight: bold;
+}
+
+ul li + li {
     color: aqua;
 }
 
-body q.simple {
-    color: fuchsia;
+br ~ p {
+    font-size: 30px;
+}
+mark {
+    font-size: medium;
+}
+
+a[target] {
+    background-color: yellow;
+}
+
+a[target="_blank"]{
+    background-color: blue;
+}
+
+a[href^="http://123"]{
+    background-color: aqua;
+}
+
+a[href$=".jpg"]{
+    background-color: teal;
+}
+
+a[href*="link"]{
+    background-color: rebeccapurple;
 }
