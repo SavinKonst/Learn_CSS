@@ -1,48 +1,102 @@
-h1,
-h2,
-span {
-    color: red;
-}
-
-div p {
-    color: green;
-}
-
-div p span {
+h4 mark {
+    background-color: greenyellow;
     color: blue;
+    border: 1px solid black;
 }
 
-ul li > span {
-font-weight: bold;
+a {
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
 }
 
-ul li + li {
+a:visited {
     color: aqua;
 }
 
-br ~ p {
-    font-size: 30px;
-}
-mark {
-    font-size: medium;
+a:hover {
+    color: red;
 }
 
-a[target] {
+a:active {
+    color: green;
+}
+
+a:focus {
+    font-size: larger;
+}
+
+p::first-letter {
+    font-size: 40px;
+}
+
+p::first-line {
+    text-decoration: underline;
+}
+
+p::selection {
     background-color: yellow;
+    color: red;
+    font-size: larger;
 }
 
-a[target="_blank"]{
-    background-color: blue;
+h1::before {
+    content: "This is ";
+    text-transform: uppercase;
 }
 
-a[href^="http://123"]{
-    background-color: aqua;
+h1::after {
+    content: " channel";
+    color: red;
 }
 
-a[href$=".jpg"]{
-    background-color: teal;
+.list1 li:first-child {
+    color: red;
 }
 
-a[href*="link"]{
-    background-color: rebeccapurple;
+.list1 li:last-child {
+    color: orange;
+}
+
+.list2 li:nth-child(even) {
+    color: red;
+    background-color: pink;
+}
+
+.list2 li:nth-child(odd) {
+    color: orange;
+    background-color: gray;
+}
+
+ul.list2 {
+    list-style-type: none;
+}
+
+.list3 li:nth-child(2) {
+    color: red;
+}
+
+.list3 li:nth-child(3) {
+    color: orange;
+}
+
+.list3 li:nth-child(3n+1) {
+    text-transform: uppercase;
+}
+
+.list3 li:nth-child(4n+1) {
+    border: 1px solid black;
+}
+.text span:first-of-type{
+    color: red;
+}
+.text span:last-of-type{
+    color: green;
+}
+.text span:nth-of-type(2){
+    border: 1px solid black;
+}
+.list4 li:not(.item){
+    background-color: grey;
+    color: white;
 }
