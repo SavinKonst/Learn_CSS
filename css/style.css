@@ -1,38 +1,28 @@
-h4 mark {
-    background-color: greenyellow;
-    color: blue;
-    border: 1px solid black;
-}
-
-p {
-    background-color: grey;
-    color: white;
-    padding: 10px;
-    margin: 5px;
-}
-
-.style1 {
-    background-color: green;
-    color: black;
-    border: none !important;
-}
-
-#style2,
-#style3 {
-    background-color: pink;
-    border: 2px solid black;
-}
-
-fieldset {
-    color: red;
+span,
+div {
+    border: 10px solid red;
+    margin: 10px 20px;
+    padding: 10px 20px 30px 40px;
+/*     margin-top: 10px;
     margin-bottom: 30px;
-    background-color: white;
+    margin-right: 20px;
+    margin-left: 40px; */
 }
 
-fieldset p,
-fieldset .style1 {
-    border: inherit !important;
-    color: inherit;
-    background-color: inherit;
-    margin: inherit;
+.text {
+    display: inline;
+}
+
+.mar {
+    margin-top: 50px;
+    width: 100px;
+    height: 100px;
+    display: inline-block;
+    box-sizing: border-box;
+}
+
+span {
+    width: 100px;
+    height: 100px;
+
 }

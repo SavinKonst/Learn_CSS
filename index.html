@@ -1,26 +1,40 @@
-<!--CSS3 #5 Каскадность и наследование (Cascading & Inheritance)-->
+<!--CSS3 #6 Блочная модель и отступы (Box Model, Padding & Margin)-->
 <!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>CSS3 #5 Cascading & Inheritance</title>
+    <title>CSS3 #6 Box Model, Padding & Margin</title>
     <link rel="stylesheet" href="/css/style.css" />
   </head>
   <body>
-    <h4><mark>Cascading styles</mark></h4>
-    <p>Paragraph</p>
-    <p class="style1">Class "style1" controls this paragraph</p>
-    <p class="style1" id="style2">ID "style2" controls this paragraph</p>
-    <p id="style3">ID "style3" controls this paragraph too</p>
-
-    <h4><mark>Inheritence of style properties</mark></h4>
-    <fieldset>
-      <p>Paragraph</p>
-      <p class="style1">Class "style1" controls this paragraph</p>
-      <p class="style1" id="style4">ID "style4" controls this paragraph</p>
-      <p id="style5">ID "style5" controls this paragraph too</p>
-    </fieldset>
+    <h4>
+      Specificity is the algorithm used by browsers to
+      <span>Span</span> the CSS declaration that is the most relevant to an
+      element, which in turn, determines the property value to apply to the
+      element. The specificity algorithm calculates the weight of a CSS selector
+      to determine which rule from competing CSS declarations gets applied to an
+      element.
+    </h4>
+    <hr />
+    <h4>
+      Specificity is the algorithm used by browsers to
+      <div>Division</div>
+      <div class="mar">Division</div>
+      the CSS declaration that is the most relevant to an element, which in
+      turn, determines the property value to apply to the element. The
+      specificity algorithm calculates the weight of a CSS selector to determine
+      which rule from competing CSS declarations gets applied to an element.
+    </h4>
+    <hr />
+    <h4>
+      Specificity is the algorithm used by browsers to
+      <div class="text">Division</div>
+      the CSS declaration that is the most relevant to an element, which in
+      turn, determines the property value to apply to the element. The
+      specificity algorithm calculates the weight of a CSS selector to determine
+      which rule from competing CSS declarations gets applied to an element.
+    </h4>
 
     <!--
         
