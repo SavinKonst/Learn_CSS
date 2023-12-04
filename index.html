@@ -1,70 +1,26 @@
-<!--CSS3 #4 Псевдоэлементы и псевдоклассы (Pseudo-elements & Pseudo-classes)-->
+<!--CSS3 #5 Каскадность и наследование (Cascading & Inheritance)-->
 <!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>CSS3 #4 Pseudo-elements & Pseudo-classes</title>
+    <title>CSS3 #5 Cascading & Inheritance</title>
     <link rel="stylesheet" href="/css/style.css" />
   </head>
   <body>
-    <h4><mark>Link</mark></h4>
-    <a href="index.html" target="_blank">Self open</a>
-    <hr />
-    <h4><mark>Text</mark></h4>
-    <p>
-      It is a period of civil war. Rebel spaceships, striking from a hidden
-      base, have won their first victory against the evil Galactic Empire.
-      During the battle, Rebel spies managed to steal secret plans to the
-      Empire's ultimate weapon, the DEATH STAR, an armored space station with
-      enough power to destroy an entire planet.
-    </p>
-    <h4><mark>before&after</mark></h4>
-    <h1>webDev</h1>
-    <h4><mark>First/last</mark></h4>
-    <ul class="list1">
-      <li>One</li>
-      <li>Two</li>
-      <li>Three</li>
-      <li>Four</li>
-      <li>Five</li>
-      <li>Six</li>
-    </ul>
-    <h4><mark>Even/odd</mark></h4>
-    <ul class="list2">
-      <li>One</li>
-      <li>Two</li>
-      <li>Three</li>
-      <li>Four</li>
-      <li>Five</li>
-      <li>Six</li>
-    </ul>
-    <h4><mark>nth-child</mark></h4>
-    <ul class="list3">
-      <li>One</li>
-      <li>Two</li>
-      <li>Three</li>
-      <li>Four</li>
-      <li>Five</li>
-      <li>Six</li>
-    </ul>
-    <h4><mark>*-of-type</mark></h4>
-    <span class="text">
-      <span>Span number One</span>
-      <div>Hello, world!</div>
-      <div>Hello, world!</div>
-      <span>Span number Two</span>
-      <span>Span number Three</span>
-    </span>
-    <h4><mark>not</mark></h4>
-    <ul class="list4">
-      <li class="item">One</li>
-      <li class="item">Two</li>
-      <li>Three</li>
-      <li>Four</li>
-      <li class="item">Five</li>
-      <li>Six</li>
-    </ul>
+    <h4><mark>Cascading styles</mark></h4>
+    <p>Paragraph</p>
+    <p class="style1">Class "style1" controls this paragraph</p>
+    <p class="style1" id="style2">ID "style2" controls this paragraph</p>
+    <p id="style3">ID "style3" controls this paragraph too</p>
+
+    <h4><mark>Inheritence of style properties</mark></h4>
+    <fieldset>
+      <p>Paragraph</p>
+      <p class="style1">Class "style1" controls this paragraph</p>
+      <p class="style1" id="style4">ID "style4" controls this paragraph</p>
+      <p id="style5">ID "style5" controls this paragraph too</p>
+    </fieldset>
 
     <!--
         
@@ -86,7 +42,7 @@
 9 #test:not(.main) = 110 ?*
 10 ul ol+li = 3 ?
 11 a:hover = 11
-12 p:first-line = 2
+12 p:first-line p{ohoiuyoio}= 2
 13 h2 strong = 2
 14 span.test ul li = 13
 
