@@ -1,28 +1,35 @@
-span,
-div {
+body {
+    height: 1000px;
+}
+
+h4 {
+    border: 1px solid black;
+    /* position: relative; */
+    bottom: 150px;
+}
+
+.block1 {
     border: 10px solid red;
-    margin: 10px 20px;
-    padding: 10px 20px 30px 40px;
-/*     margin-top: 10px;
-    margin-bottom: 30px;
-    margin-right: 20px;
-    margin-left: 40px; */
-}
-
-.text {
-    display: inline;
-}
-
-.mar {
-    margin-top: 50px;
-    width: 100px;
-    height: 100px;
     display: inline-block;
+
+    min-height: 100px;
+    min-width: 100px;
     box-sizing: border-box;
-}
-
-span {
-    width: 100px;
-    height: 100px;
+    position: relative;
+    top: 20px;
+    right: 20px;
 
 }
+
+.block2 {
+    border: 5px solid blue;
+    box-sizing: border-box;
+    height: 50px;
+    width: 50px;
+    display: inline-block;
+    position:absolute;
+    top: 15px;
+    right: 15px;
+    overflow: auto;
+}
+

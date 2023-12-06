@@ -1,65 +1,23 @@
-<!--CSS3 #6 Блочная модель и отступы (Box Model, Padding & Margin)-->
+<!-- CSS3 #7 Позиционирование и размеры (Positioning & Sizing) -->
 <!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>CSS3 #6 Box Model, Padding & Margin</title>
+    <title>CSS3 #7 Positioning & Sizing</title>
     <link rel="stylesheet" href="/css/style.css" />
   </head>
   <body>
     <h4>
-      Specificity is the algorithm used by browsers to
-      <span>Span</span> the CSS declaration that is the most relevant to an
-      element, which in turn, determines the property value to apply to the
-      element. The specificity algorithm calculates the weight of a CSS selector
-      to determine which rule from competing CSS declarations gets applied to an
-      element.
+      HTML-элемент
+      <div class="block1">
+        Div No1 in block element
+        <div class="block2"><span class="span1">D</span></div>
+      </div>
+      является основным строковым контейнером для фразового контента, который,
+      по существу, ничего не представляет. Он может использоваться для
+      группировки элементов в целях стилизации (использование атрибутов class
+      или id) или потому, что они имеет общие значения атрибутов, например lang.
     </h4>
-    <hr />
-    <h4>
-      Specificity is the algorithm used by browsers to
-      <div>Division</div>
-      <div class="mar">Division</div>
-      the CSS declaration that is the most relevant to an element, which in
-      turn, determines the property value to apply to the element. The
-      specificity algorithm calculates the weight of a CSS selector to determine
-      which rule from competing CSS declarations gets applied to an element.
-    </h4>
-    <hr />
-    <h4>
-      Specificity is the algorithm used by browsers to
-      <div class="text">Division</div>
-      the CSS declaration that is the most relevant to an element, which in
-      turn, determines the property value to apply to the element. The
-      specificity algorithm calculates the weight of a CSS selector to determine
-      which rule from competing CSS declarations gets applied to an element.
-    </h4>
-
-    <!--
-        
-        Selector Specificity
-        
-        1000 - inline style
-        100 - ID
-        10 - class, attribute, pseudoclass
-        1 - element, pseudoelement     
-        
-1 li = 1
-2 #main.item = 110
-3 h1 + *[href="test"] = 11 ?
-4 #test p = 101
-5 list.item.main = 21
-6 #test = 100
-7 ul ol li.item = 13
-8 ul li = 2
-9 #test:not(.main) = 110 ?*
-10 ul ol+li = 3 ?
-11 a:hover = 11
-12 p:first-line p{ohoiuyoio}= 2
-13 h2 strong = 2
-14 span.test ul li = 13
-
-        -->
   </body>
 </html>
