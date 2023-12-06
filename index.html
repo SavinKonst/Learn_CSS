@@ -1,23 +1,121 @@
-<!-- CSS3 #7 Позиционирование и размеры (Positioning & Sizing) -->
+<!-- CSS3 #8 Единицы, переполнение и уровни элементов (Units, Overflow & z-index) -->
 <!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>CSS3 #7 Positioning & Sizing</title>
+    <title>CSS3 #8 Units, Overflow & z-index</title>
     <link rel="stylesheet" href="/css/style.css" />
   </head>
   <body>
+    <h4><span>Absolute unit - 20px (pixels)</span></h4>
+    <ul class="list1">
+      <li>
+        First level
+        <ul>
+          <li>
+            Second level
+            <ul>
+              <li>
+                Third level
+                <ul>
+                  <li>
+                    Frourth level
+                    <ul>
+                      <li>Fifth level</li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+    </ul>
+    <hr />
     <h4>
-      HTML-элемент
-      <div class="block1">
-        Div No1 in block element
-        <div class="block2"><span class="span1">D</span></div>
-      </div>
-      является основным строковым контейнером для фразового контента, который,
-      по существу, ничего не представляет. Он может использоваться для
-      группировки элементов в целях стилизации (использование атрибутов class
-      или id) или потому, что они имеет общие значения атрибутов, например lang.
+      <span>Relative unit - 80% (percents)</span> (base font-size of List is
+      40px
     </h4>
+    <ul class="list2">
+      <li>
+        First level
+        <ul>
+          <li>
+            Second level
+            <ul>
+              <li>
+                Third level
+                <ul>
+                  <li>
+                    Frourth level
+                    <ul>
+                      <li>Fifth level</li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+    </ul>
+    <hr />
+    <h4><span>Relative unit - 2em</span> (base font-size of List is 4px)</h4>
+    <ul class="list3">
+      <li>
+        First level
+        <ul>
+          <li>
+            Second level
+            <ul>
+              <li>
+                Third level
+                <ul>
+                  <li>
+                    Frourth level
+                    <ul>
+                      <li>Fifth level</li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+    </ul>
+    <hr />
+    <h4>
+      <span>Relative unit - 2rem</span> (base font-size of Document is 16px)
+    </h4>
+    <ul class="list4">
+      <li>
+        First level
+        <ul>
+          <li>
+            Second level
+            <ul>
+              <li>
+                Third level
+                <ul>
+                  <li>
+                    Frourth level
+                    <ul>
+                      <li>Fifth level</li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+    </ul>
+    <hr />
+    <!-- Using of z-index -->
+    <div class="modal">Modal</div>
+    <hr />
+    <div class="overlay"></div>
   </body>
 </html>
