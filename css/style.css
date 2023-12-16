@@ -1,85 +1,46 @@
-h4 {
-  margin-bottom: 10px;
-
-}
-
 h4 span {
-  font-size: 20px;
-  background-color: aqua;
-  border: 2px blue dashed;
-  color: red;
-  padding-inline: 7px;
-  padding-bottom: 5px;
-  text-shadow: 2px 2px 2px grey;
+  background-color: chartreuse;
 }
 
-.border1,
-.border2 {
+.example1 {
+  display: block;
+  background-color: grey;
+  border: 5px solid blueviolet;
+  border-radius: 10px 20px 30px 40px;
   width: 100px;
   height: 100px;
-  border-width: 10px;
-  margin: 20px;
-  display: inline-block;
-  outline-style: dashed;
-  outline-width: 16px;
-  outline-color: greenyellow;
+  box-shadow: 5px 5px 5px gray;
+  position: relative;
+  left: calc(50% - 50px - 8px);
+
 }
 
-.border1 {
-  background-color: yellow;
-  /* border-bottom-width: 20px; */
-  /* border-left-width: 30px; */
-  border-top-style: dashed;
-  border-left-style: dotted;
-  border-right-style: double;
-  border-bottom-style: groove;
-  border-top-color: red;
-  border-bottom-color: green;
-  border-left-color: blue;
-  border-right-color: pink;
-  ;
+.example2 {
+  display: block;
+  background-color: grey;
+  border: 5px solid blueviolet;
+  border-radius: 40px/50px;
+  width: 100px;
+  height: 100px;
+  box-shadow: 5px 5px 5px gray;
+  position: relative;
+  left: calc(50% - 50px - 8px);
+
 }
 
-.border2 {
-  background-color: pink;
-  /* border-width: 10px; */
-  border-top-style: solid;
-  border-left-style: inset;
-  border-right-style: ridge;
-  border-bottom-style: outset;
-  border-top-color: red;
-  border-bottom-color: blue;
-  border-left-color: blue;
-  border-right-color: pink;
-}
-
-input {
-  margin: 5px;
-}
-
-.message1:focus {
-  outline: 3px solid greenyellow;
-}
-
-.message2:focus {
-  outline: 3px solid red;
+ul li {
+  list-style-type: circle;
+  /* list-style-type: '\1F600'; */
+  list-style-position: inside;
 }
 
 h1 {
-  text-align: center;
-  font-size: 40px;
-  color: black;
-  text-shadow: 1px 1px 2px red, -1px -1px 5px blue;
+  color: #71e771;
+  /* color: red; */
+  /* color: rgba(104, 170, 228, 0.5); */
+  text-shadow: -1px 0px 0px black,
+    0px -1px 0px black,
+    1px 0px 0px black,
+    0px 1px 0px black;
 
-}
-
-.boxshadow {
-  margin: 20px;
-  width: 100px;
-  height: 100px;
-  background-color: aqua;
-  border: 2px solid brown;
-  box-shadow: 3px 3px 5px blue,
-    3px -3px 5px green,
-    inset 5px 5px 3px grey;
 }
