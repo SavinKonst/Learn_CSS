@@ -1,39 +1,15 @@
-h3 span {
-  background-color: chartreuse;
-}
-
-ol {
-  width: max-content;
-}
-
-li {
-  list-style-position: inside;
-}
-
-span {
-  display: block;
-}
-
-.one {
-  color: red;
-  display: none;
-}
-
-.two {
-  color: green;
-  visibility: hidden;
+body {
+  margin: 0px;
 
 }
 
-.three {
-  color: blueviolet;
-  opacity: 0;
-}
-
-.four {
-  color: transparent;
-}
-
-dd {
-  font-size: smaller;
+.back {
+  min-height: 100vh;
+  width: 100%;
+  background-color: gainsboro;
+  background-image: url(/pic/palmbeach.jpg);
+  background-size: 500px auto;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
 }
