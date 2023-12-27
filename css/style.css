@@ -1,5 +1,7 @@
 .back {
   width: 100px;
   height: 100px;
-  background-image: linear-gradient(90deg black white);
+  border: 1px solid black;
+  background: linear-gradient(45deg, black, white), 
+  linear-gradient(135deg, blue, red);
 }
