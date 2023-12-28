@@ -6,6 +6,9 @@ div {
   margin: 30px;
   margin-top: 10px;
   text-align: center;
+  display: table-cell;
+  vertical-align: middle;
+  text-shadow: -1px -1px 2px white, 1px -1px 2px white, 1px 1px 2px white, -1px 1px 2px white;
 }
 
 .block1 {
@@ -13,11 +16,11 @@ div {
 }
 
 .block2 {
-  background: linear-gradient(135deg, red, green, blue);
+  background: linear-gradient(to top right, red, orange, yellow, green, aqua, blue, violet);
 }
 
 .block3 {
-  background: linear-gradient(45deg, black, white);
+  background: linear-gradient(45deg, yellow 25%, black 25%, black 50%, yellow 50%, yellow 75%, black 75%);
 }
 
 .block4 {
