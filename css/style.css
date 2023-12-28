@@ -37,30 +37,41 @@ div {
 
 div.block7 {
   width: 255px;
-  background: radial-gradient(ellipse, red, blue);
+  background: radial-gradient(circle, red, blue);
 }
 
 div.block8 {
   width: 255px;
-  background: radial-gradient(circle, red, blue);
+  background: radial-gradient(ellipse, red, blue);
 }
 
 div.block9 {
   width: 255px;
-  background: radial-gradient(ellipse, red, blue);
+  background: radial-gradient(circle closest-side, red, blue);
 }
 
 div.block10 {
   width: 255px;
-  background: radial-gradient(circle, red, blue);
+  background: radial-gradient(circle closest-corner, red, blue);
 }
 
-div.block7 {
+div.block11 {
   width: 255px;
-  background: radial-gradient(ellipse, red, blue);
+  background: radial-gradient(circle farthest-side, red, blue);
 }
-
-div.block8 {
+div.block12 {
   width: 255px;
-  background: radial-gradient(circle, red, blue);
+  background: radial-gradient(circle farthest-corner, red, blue);
+}
+div.block13 {
+  width: 255px;
+  background: radial-gradient(circle, red 80%, blue 20%);
+}
+div.block14 {
+  width: 255px;
+  background: repeating-radial-gradient(circle, red 10%, blue 40%);
+}
+div.block15 {
+  width: 255px;
+  background: repeating-radial-gradient(circle, red 10px, blue 40px);
 }
