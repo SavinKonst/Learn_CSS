@@ -1,15 +1,66 @@
-body {
-  margin: 0px;
-
+div {
+  width: 150px;
+  height: 150px;
+  border: 1px solid black;
+  float: left;
+  margin: 30px;
+  margin-top: 10px;
+  text-align: center;
+  display: table-cell;
+  vertical-align: middle;
+  text-shadow: -1px -1px 2px white, 1px -1px 2px white, 1px 1px 2px white, -1px 1px 2px white;
 }
 
-.back {
-  min-height: 100vh;
-  width: 100%;
-  background-color: gainsboro;
-  background-image: url(/pic/palmbeach.jpg);
-  background-size: 500px auto;
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-attachment: fixed;
+.block1 {
+  background: linear-gradient(45deg, black, white);
+}
+
+.block2 {
+  background: linear-gradient(to top right, red, orange, yellow, green, aqua, blue, violet);
+}
+
+.block3 {
+  background: linear-gradient(45deg, yellow 25%, black 25%, black 50%, yellow 50%, yellow 75%, black 75%);
+}
+
+.block4 {
+  background: linear-gradient(45deg, black 10px, yellow 10px, yellow 20px, black 20px, black 30px, yellow 30px);
+}
+
+.block5 {
+  background: repeating-linear-gradient(45deg, black 10px, yellow 10px, yellow 20px, black 20px, black 30px, yellow 30px);
+}
+
+.block6 {
+  background: radial-gradient(red, blue);
+}
+
+div.block7 {
+  width: 255px;
+  background: radial-gradient(ellipse, red, blue);
+}
+
+div.block8 {
+  width: 255px;
+  background: radial-gradient(circle, red, blue);
+}
+
+div.block9 {
+  width: 255px;
+  background: radial-gradient(ellipse, red, blue);
+}
+
+div.block10 {
+  width: 255px;
+  background: radial-gradient(circle, red, blue);
+}
+
+div.block7 {
+  width: 255px;
+  background: radial-gradient(ellipse, red, blue);
+}
+
+div.block8 {
+  width: 255px;
+  background: radial-gradient(circle, red, blue);
 }
