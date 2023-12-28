@@ -1,7 +1,25 @@
-.back {
-  width: 100px;
-  height: 100px;
+div {
+  width: 150px;
+  height: 150px;
   border: 1px solid black;
-  background: linear-gradient(45deg, black, white), 
-  linear-gradient(135deg, blue, red);
+  float: left;
+  margin: 30px;
+  margin-top: 10px;
+  text-align: center;
+}
+
+.block1 {
+  background: linear-gradient(45deg, black, white);
+}
+
+.block2 {
+  background: linear-gradient(135deg, red, green, blue);
+}
+
+.block3 {
+  background: linear-gradient(45deg, black, white);
+}
+
+.block4 {
+  background: linear-gradient(45deg, black, white);
 }
