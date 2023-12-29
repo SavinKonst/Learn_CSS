@@ -1,77 +1,69 @@
+body {
+  text-align: center;
+}
+
 div {
+  width: 170px;
+  border: 1px solid black;
+  margin: 5px;
+  margin-bottom: 20px;
+
+  text-align: center;
+  float: left;
+}
+
+div div {
   width: 150px;
   height: 150px;
+  background-image: url(/pictures/garden.jpeg);
+  background-size: 100% 100%;
   border: 1px solid black;
-  float: left;
-  margin: 30px;
-  margin-top: 10px;
-  text-align: center;
-  display: table-cell;
-  vertical-align: middle;
-  text-shadow: -1px -1px 2px white, 1px -1px 2px white, 1px 1px 2px white, -1px 1px 2px white;
+  /* float: left;*/
+  margin: 10px;
 }
 
-.block1 {
-  background: linear-gradient(45deg, black, white);
-}
+.block1 {}
 
 .block2 {
-  background: linear-gradient(to top right, red, orange, yellow, green, aqua, blue, violet);
+  filter: blur(5px);
 }
 
 .block3 {
-  background: linear-gradient(45deg, yellow 25%, black 25%, black 50%, yellow 50%, yellow 75%, black 75%);
+  filter: drop-shadow(5px 5px 3px grey);
 }
 
 .block4 {
-  background: linear-gradient(45deg, black 10px, yellow 10px, yellow 20px, black 20px, black 30px, yellow 30px);
+  filter: grayscale(80%);
 }
 
 .block5 {
-  background: repeating-linear-gradient(45deg, black 10px, yellow 10px, yellow 20px, black 20px, black 30px, yellow 30px);
+  filter: brightness(150%);
 }
 
 .block6 {
-  background: radial-gradient(red, blue);
+  filter: contrast(150%);
 }
 
-div.block7 {
-  width: 255px;
-  background: radial-gradient(circle, red, blue);
+.block7 {
+  filter: hue-rotate(180deg);
 }
 
-div.block8 {
-  width: 255px;
-  background: radial-gradient(ellipse, red, blue);
+.block8 {
+  filter: invert(100%);
 }
 
-div.block9 {
-  width: 255px;
-  background: radial-gradient(circle closest-side, red, blue);
+.block9 {
+  filter: saturate(300%);
 }
 
-div.block10 {
-  width: 255px;
-  background: radial-gradient(circle closest-corner, red, blue);
+.block10 {
+  filter: sepia(100%);
 }
 
-div.block11 {
-  width: 255px;
-  background: radial-gradient(circle farthest-side, red, blue);
+.block11 {
+  filter: opacity(50%);
 }
-div.block12 {
-  width: 255px;
-  background: radial-gradient(circle farthest-corner, red, blue);
-}
-div.block13 {
-  width: 255px;
-  background: radial-gradient(circle, red 80%, blue 20%);
-}
-div.block14 {
-  width: 255px;
-  background: repeating-radial-gradient(circle, red 10%, blue 40%);
-}
-div.block15 {
-  width: 255px;
-  background: repeating-radial-gradient(circle, red 10px, blue 40px);
+
+.block12 {
+  filter: blur(2px) brightness(150%);
 }
