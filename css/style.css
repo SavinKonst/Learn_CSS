@@ -1,69 +1,26 @@
-body {
+body{
   text-align: center;
 }
-
-div {
-  width: 170px;
-  border: 1px solid black;
-  margin: 5px;
-  margin-bottom: 20px;
-
+div{
+  width: max-content;
+  border: 2px solid black;
+  margin: 10px;
   text-align: center;
   float: left;
 }
-
-div div {
-  width: 150px;
+div div{
   height: 150px;
-  background-image: url(/pictures/garden.jpeg);
-  background-size: 100% 100%;
+  width: 150px;
   border: 1px solid black;
-  /* float: left;*/
+  
+  background: url(/pictures/garden.jpeg) 150px 150px;
+  background-size: cover;
   margin: 10px;
 }
-
-.block1 {}
-
-.block2 {
-  filter: blur(5px);
+.cart1:hover{
+  transform: rotate(-20deg);
 }
-
-.block3 {
-  filter: drop-shadow(5px 5px 3px grey);
-}
-
-.block4 {
-  filter: grayscale(80%);
-}
-
-.block5 {
-  filter: brightness(150%);
-}
-
-.block6 {
-  filter: contrast(150%);
-}
-
-.block7 {
-  filter: hue-rotate(180deg);
-}
-
-.block8 {
-  filter: invert(100%);
-}
-
-.block9 {
-  filter: saturate(300%);
-}
-
-.block10 {
-  filter: sepia(100%);
-}
-
-.block11 {
-  filter: opacity(50%);
-}
-
-.block12 {
-  filter: blur(2px) brightness(150%);
+.cart2:hover{
+  overflow: hidden;
+  transform: scale(1.2);
 }
