@@ -55,6 +55,7 @@ div.card4 {
 div.card5 {
   transition-duration: 5s, 1s;
   transition-property: background-color, transform;
+  transition-delay: ;
 }
 
 div.card4 {
