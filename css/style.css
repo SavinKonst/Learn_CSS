@@ -17,42 +17,52 @@ div {
   margin: 10px;
   text-align: center;
   float: left;
-  /* overflow: hidden; */
 }
 
 div div {
   height: 150px;
   width: 150px;
   border: 1px solid black;
-
-  background: url(/pictures/garden.jpeg) 150px 150px;
-  background-size: cover;
+  background-color: aqua;
   margin: 10px;
-  transition: all 1s ease;
+  /* transition-duration: 500ms; */
 }
 
-.card1:hover {
-  transform: rotate(-20deg);
-}
-
-.card2:hover {
-  overflow: hidden;
+div div:hover {
+  background-color: red;
   transform: scale(1.2);
 }
 
-.card3:hover {
-  transform: translate(20px, -20px);
+div.card1 {
+  transition-duration: 0.5s;
 }
 
-.card4:hover {
-  transform: skew(20deg, 20deg);
+div.card2 {
+  transition-duration: 2s;
+  transition-property: transform;
 }
 
-.card5:hover {
-  transform: rotate(10deg) scale(1.2) skew(10deg);
+div.card3 {
+  transition-duration: 2s;
+  transition-property: background-color;
 }
 
-.card6:hover {
-  transform: rotate(90deg);
-  transform-origin: top right;
+div.card4 {
+  transition-duration: 5s, 1s;
+  transition-property: background-color, transform;
+}
+
+div.card5 {
+  transition-duration: 5s, 1s;
+  transition-property: background-color, transform;
+}
+
+div.card4 {
+  transition-duration: 5s, 1s;
+  transition-property: background-color, transform;
+}
+
+div.card4 {
+  transition-duration: 5s, 1s;
+  transition-property: background-color, transform;
 }
