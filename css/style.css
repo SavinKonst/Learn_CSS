@@ -55,15 +55,14 @@ div.card4 {
 div.card5 {
   transition-duration: 5s, 1s;
   transition-property: background-color, transform;
-  transition-delay: ;
+  transition-delay: 1s, 0s;
 }
 
-div.card4 {
-  transition-duration: 5s, 1s;
-  transition-property: background-color, transform;
+div.card6 {
+  transition-duration: 5s;
+  transition-timing-function: steps(10, start);
 }
 
-div.card4 {
-  transition-duration: 5s, 1s;
-  transition-property: background-color, transform;
+div.card7 {
+  transition: all 5s ease 0.5s;
 }
