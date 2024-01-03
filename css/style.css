@@ -1,68 +1,106 @@
 body {
   text-align: center;
 }
-
-.info {
-  padding-left: 5px;
-  padding-right: 5px;
+.info{
+  width: 200px;
   border: 2px solid red;
-  width: max-content;
   margin-left: auto;
   margin-right: auto;
 }
 
 div {
-  width: min-content;
+  width: 370px;
   border: 2px solid black;
   margin: 10px;
-  text-align: center;
+ /* text-align: center;*/
   float: left;
 }
 
 div div {
   height: 150px;
   width: 150px;
+  border-radius: 20%;
   border: 1px solid black;
-  background-color: aqua;
   margin: 10px;
-  /* transition-duration: 500ms; */
+  line-height: 150px;
+  font-size: 40px;
+  text-shadow: -2px -2px 2px white, 2px -2px 2px white, 2px 2px 2px white, -2px 2px 2px white;
 }
 
 div div:hover {
-  background-color: red;
-  transform: scale(1.2);
+  animation-play-state: paused;
+}
+
+@keyframes coloranime {
+  from {
+    background-color: red;
+  }
+
+  50% {
+    background-color: green;
+  }
+
+  to {
+    background-color: blue;
+  }
+}
+
+@keyframes rotateanime {
+  from {
+    transform: rotate(0deg)
+  }
+
+  to {
+    transform: rotate(180deg);
+  }
+}
+
+@keyframes scaleanime {
+  from {
+    transform: scale(1)
+  }
+
+  50% {
+    transform: scale(0.5);
+  }
+
+  to {
+    transform: scale(1)
+  }
 }
 
 div.card1 {
-  transition-duration: 0.5s;
+  animation-name: coloranime;
+  animation-duration: 3s;
 }
 
 div.card2 {
-  transition-duration: 2s;
-  transition-property: transform;
+  animation-name: coloranime, scaleanime;
+  animation-duration: 3s, 6s;
 }
 
 div.card3 {
-  transition-duration: 2s;
-  transition-property: background-color;
+  animation-name: coloranime, scaleanime;
+  animation-duration: 5s, 3s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
 }
 
 div.card4 {
-  transition-duration: 5s, 1s;
-  transition-property: background-color, transform;
+  animation-name: coloranime, rotateanime;
+  animation-duration: 3s, 2s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
 }
 
 div.card5 {
-  transition-duration: 5s, 1s;
-  transition-property: background-color, transform;
-  transition-delay: 1s, 0s;
+  animation-name: coloranime, rotateanime;
+  animation-duration: 5s, 2s;
+  animation-iteration-count: infinite;
+  animation-delay: 2s;
 }
 
 div.card6 {
-  transition-duration: 5s;
-  transition-timing-function: steps(10, start);
-}
-
-div.card7 {
-  transition: all 5s ease 0.5s;
+  animation: rotateanime 3s infinite linear;
 }

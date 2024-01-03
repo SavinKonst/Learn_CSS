@@ -1,49 +1,57 @@
-<!-- CSS3 #18 Плавные переходы (Transition) -->
+<!-- CSS3 #19 Анимации (Animations) -->
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>CSS3 #18 Transition</title>
+  <title>CSS3 #19 Animations</title>
   <link rel="stylesheet" href="css/style.css" />
 </head>
+
 <body>
-  <h1>Lesson#18 Transition</h1>
-  <p class="info">Push on images</p>
+  <h1>Lesson#19 Animations</h1>
+  <p class="info">Click on the squares to stop the animation</p>
   <div>
-    <div class="card1"></div>
-    <p>transition-duration: 500ms</p>
-  </div>
-  <div>
-    <div class="card2"></div>
-    <p>transition-duration: 2s; transition-property: transform;</p>
-  </div>
-  <div>
-    <div class="card3"></div>
-    <p>transition-duration: 2s; transition-property: background-color;</p>
-  </div>
-  <div>
-    <div class="card4"></div>
+    <div class="card1">1</div>
     <p>
-      transition-duration: 5s, 1s; transition-property: background-color,
-      transform;
+      animation-name: coloranime;
+      animation-duration: 3s;
     </p>
   </div>
   <div>
-    <div class="card5"></div>
-    <p>transition-duration: 5s, 1s;
-      transition-property: background-color, transform;
-      transition-delay: 1s, 0s;</p>
+    <div class="card2">2</div>
+    <p>animation-name: coloranime, scaleanime;
+      animation-duration: 3s, 6s;</p>
   </div>
   <div>
-    <div class="card6"></div>
-    <p>transition-duration: 5s;
-      transition-timing-function: steps(10, start)</p>
+    <div class="card3">3</div>
+    <p> animation-name: coloranime;
+      animation-duration: 5s;
+      animation-timing-function: linear;
+      animation-iteration-count: infinite;</p>
   </div>
   <div>
-    <div class="card7"></div>
-    <p>transition: all 5s ease 0.5s</p>
+    <div class="card4">4</div>
+    <p>
+      animation-name: coloranime, rotateanime;
+      animation-duration: 3s, 2s;
+      animation-timing-function: linear;
+      animation-iteration-count: infinite;
+      animation-direction: alternate;
+    </p>
+  </div>
+  <div>
+    <div class="card5">5</div>
+    <p> animation-name: coloranime, rotateanime;
+      animation-duration: 5s 2s;
+      animation-iteration-count: infinite;
+      animation-delay: 2s;</p>
+  </div>
+  <div>
+    <div class="card6">6</div>
+    <p> animation: rotateanime 3s infinite linear;</p>
   </div>
 </body>
+
 </html>
