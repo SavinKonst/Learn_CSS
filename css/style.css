@@ -1,45 +1,49 @@
-body {
+h1 {
   text-align: center;
 }
-
-h4 {
-  text-align: left;
-  margin-bottom: 5px;
+h4{
+  margin-bottom: 10px;
 }
-
 img {
   width: 50px;
 }
 
-table {
+table,
+table *:not(img){
   margin-left: auto;
   margin-right: auto;
+  border: 1px solid black;
 }
 
 .table1,
 .table1 * {
-  /*  table-layout: auto;*/
-  border: 1px solid black;
-  /*  max-width: calc(100vw - 10%);*/
 
 }
 
 .table2,
 .table2 * {
-  border: 1px solid black;
+ /* border: 1px solid black;*/
   border-collapse: collapse;
 }
 
 .table3,
 .table3 * {
-  border: 1px solid black;
   border-spacing: 20px;
 }
 .table4,
 .table4 * {
-  border: 1px solid black;
   caption-side: bottom;
 }
 table.table4 caption {
   color: red;
+  font-size: larger;
+}
+.table5, 
+.table5 *{
+  text-align: right;
+  vertical-align: bottom;
+}
+.table6, 
+.table6 *{
+  empty-cells: hide;
 }
