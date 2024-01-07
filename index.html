@@ -1,54 +1,143 @@
-<!-- CSS3 #19 Анимации (Animations) -->
+<!-- CSS3 #20 Таблицы и курсор-->
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>CSS3 #19 Animations</title>
+  <title>CSS3 #20 Tables & Cursor</title>
   <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
-  <h1>Lesson#19 Animations</h1>
-  <p class="info">Click on the squares to stop the animation</p>
-  <div>
-    <div class="card1">1</div>
-    <p>
-      animation-name: coloranime;
-      animation-duration: 3s;
-    </p>
-  </div>
-  <div>
-    <div class="card2">2</div>
-    <p>animation-name: coloranime, scaleanime;
-      animation-duration: 3s, 6s;</p>
-  </div>
-  <div>
-    <div class="card3">3</div>
-    <p> animation-name: coloranime;
-      animation-duration: 5s;
-      animation-timing-function: linear;
-      animation-iteration-count: infinite;</p>
-  </div>
-  <div>
-    <div class="card4">4</div>
-    <p>
-      animation-name: coloranime, rotateanime;
-      animation-duration: 3s, 2s;
-      animation-timing-function: linear;
-      animation-iteration-count: infinite;
-      animation-direction: alternate;
-    </p>
-  </div>
-  <div>
-    <div class="card5">5</div>
-    <p> animation-name: coloranime, rotateanime;
-      animation-duration: 6s 2s;
-      animation-iteration-count: infinite;
-      animation-delay: 2s;</p>
-  </div>
-  <div>
-    <div class="card6">6</div>
-    <p> animation: rotateanime 3s infinite linear;</p>
-  </div>
+  <h1>Lesson#20 Tables and Cursor</h1>
+  <h4>1.</h4>
+   <table class="table1">
+     <caption>The types of candies</caption>
+     <thead>
+     <tr>
+       <th>Name</td>
+       <th>Type</td>
+       <th>Description</td>
+     </tr>
+     </thead>
+     <tfoot>
+       
+     </tfoot>
+     <tbody>
+     <tr>
+       <td>Raffaello
+       <img src="/pictures/Raffaello_brand_logo.png" alt="Raffaello brand logo">
+       <img src="/pictures/2023_Raffaello.jpg" alt="Candies picture">
+       </td>
+       <td>candy</td>
+       <td>Raffaello is a spherical coconut–almond truffle that Italian manufacturer Ferrero brought to the market in 1990.[1] It consists of a spherical wafer which is filled with a white milk cream and white blanched almonds. It is then surrounded by a coconut layer. It does contain lactose, making Raffaello incompatible for consumers with lactose intolerance.</td>
+     </tr>
+     <tr>
+       <td>Oreo
+       <img src="/pictures/Oreo_Cookie_logo.png" alt="Oreo coocies logo">
+       <img src="/pictures/Oreo-Two-Cookies.png" alt="Coocies image">
+       </td>
+       <td>coocies</td>
+       <td>Oreo (stylized in all caps) is a brand of sandwich cookie consisting of two cocoa biscuits or cookie pieces with a sweet fondant[3] filling. It was introduced by Nabisco on March 6, 1912,[4] and through a series of corporate acquisitions, mergers and splits both Nabisco and the Oreo brand have been owned by Mondelez International since 2012.[5] Oreo cookies are available in over one hundred countries.[2] Many varieties of Oreo cookies have been produced, and limited-edition runs have become popular in the 21st century.</td>
+     </tr>
+     </tbody>
+   </table>
+   
+  <h4>2. border-collapse: collapse</h4>
+  <table class="table2">
+    <caption>The types of candies</caption>
+    <thead>
+      <tr>
+        <th>Name</td>
+        <th>Type</td>
+        <th>Description</td>
+      </tr>
+    </thead>
+    <tfoot>
+
+    </tfoot>
+    <tbody>
+      <tr>
+        <td>Raffaello
+          <img src="/pictures/Raffaello_brand_logo.png" alt="Raffaello brand logo">
+          <img src="/pictures/2023_Raffaello.jpg" alt="Candies picture">
+        </td>
+        <td>candy</td>
+        <td>Raffaello is a spherical coconut–almond truffle that Italian manufacturer Ferrero brought to the market in 1990.[1] It consists of a spherical wafer which is filled with a white milk cream and white blanched almonds. It is then surrounded by a coconut layer. It does contain lactose, making Raffaello incompatible for consumers with lactose intolerance.</td>
+      </tr>
+      <tr>
+        <td>Oreo
+          <img src="/pictures/Oreo_Cookie_logo.png" alt="Oreo coocies logo">
+          <img src="/pictures/Oreo-Two-Cookies.png" alt="Coocies image">
+        </td>
+        <td>coocies</td>
+        <td>Oreo (stylized in all caps) is a brand of sandwich cookie consisting of two cocoa biscuits or cookie pieces with a sweet fondant[3] filling. It was introduced by Nabisco on March 6, 1912,[4] and through a series of corporate acquisitions, mergers and splits both Nabisco and the Oreo brand have been owned by Mondelez International since 2012.[5] Oreo cookies are available in over one hundred countries.[2] Many varieties of Oreo cookies have been produced, and limited-edition runs have become popular in the 21st century.</td>
+      </tr>
+    </tbody>
+  </table>
+  <h4>3. table-spacing: 20px</h4>
+  <table class="table3">
+    <caption>The types of candies</caption>
+    <thead>
+      <tr>
+        <th>Name</td>
+        <th>Type</td>
+        <th>Description</td>
+      </tr>
+    </thead>
+    <tfoot>
+
+    </tfoot>
+    <tbody>
+      <tr>
+        <td>Raffaello
+          <img src="/pictures/Raffaello_brand_logo.png" alt="Raffaello brand logo">
+          <img src="/pictures/2023_Raffaello.jpg" alt="Candies picture">
+        </td>
+        <td>candy</td>
+        <td>Raffaello is a spherical coconut–almond truffle that Italian manufacturer Ferrero brought to the market in 1990.[1] It consists of a spherical wafer which is filled with a white milk cream and white blanched almonds. It is then surrounded by a coconut layer. It does contain lactose, making Raffaello incompatible for consumers with lactose intolerance.</td>
+      </tr>
+      <tr>
+        <td>Oreo
+          <img src="/pictures/Oreo_Cookie_logo.png" alt="Oreo coocies logo">
+          <img src="/pictures/Oreo-Two-Cookies.png" alt="Coocies image">
+        </td>
+        <td>coocies</td>
+        <td>Oreo (stylized in all caps) is a brand of sandwich cookie consisting of two cocoa biscuits or cookie pieces with a sweet fondant[3] filling. It was introduced by Nabisco on March 6, 1912,[4] and through a series of corporate acquisitions, mergers and splits both Nabisco and the Oreo brand have been owned by Mondelez International since 2012.[5] Oreo cookies are available in over one hundred countries.[2] Many varieties of Oreo cookies have been produced, and limited-edition runs have become popular in the 21st century.</td>
+      </tr>
+    </tbody>
+  </table>
+  <h4>4. caption-side: bottom</h4>
+  <table class="table4">
+    <caption>The types of candies</caption>
+    <thead>
+      <tr>
+        <th>Name</td>
+        <th>Type</td>
+        <th>Description</td>
+      </tr>
+    </thead>
+    <tfoot>
+
+    </tfoot>
+    <tbody>
+      <tr>
+        <td>Raffaello
+          <img src="/pictures/Raffaello_brand_logo.png" alt="Raffaello brand logo">
+          <img src="/pictures/2023_Raffaello.jpg" alt="Candies picture">
+        </td>
+        <td>candy</td>
+        <td>Raffaello is a spherical coconut–almond truffle that Italian manufacturer Ferrero brought to the market in 1990.[1] It consists of a spherical wafer which is filled with a white milk cream and white blanched almonds. It is then surrounded by a coconut layer. It does contain lactose, making Raffaello incompatible for consumers with lactose intolerance.</td>
+      </tr>
+      <tr>
+        <td>Oreo
+          <img src="/pictures/Oreo_Cookie_logo.png" alt="Oreo coocies logo">
+          <img src="/pictures/Oreo-Two-Cookies.png" alt="Coocies image">
+        </td>
+        <td>coocies</td>
+        <td>Oreo (stylized in all caps) is a brand of sandwich cookie consisting of two cocoa biscuits or cookie pieces with a sweet fondant[3] filling. It was introduced by Nabisco on March 6, 1912,[4] and through a series of corporate acquisitions, mergers and splits both Nabisco and the Oreo brand have been owned by Mondelez International since 2012.[5] Oreo cookies are available in over one hundred countries.[2] Many varieties of Oreo cookies have been produced, and limited-edition runs have become popular in the 21st century.</td>
+      </tr>
+    </tbody>
+  </table>
+
 </body>
 </html>

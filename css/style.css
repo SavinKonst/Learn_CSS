@@ -1,106 +1,45 @@
 body {
   text-align: center;
 }
-.info{
-  width: 200px;
-  border: 2px solid red;
+
+h4 {
+  text-align: left;
+  margin-bottom: 5px;
+}
+
+img {
+  width: 50px;
+}
+
+table {
   margin-left: auto;
   margin-right: auto;
 }
 
-div {
-  width: 370px;
-  border: 2px solid black;
-  margin: 10px;
- /* text-align: center;*/
-  float: left;
-}
-
-div div {
-  height: 150px;
-  width: 150px;
-  border-radius: 20%;
+.table1,
+.table1 * {
+  /*  table-layout: auto;*/
   border: 1px solid black;
-  margin: 10px;
-  line-height: 150px;
-  font-size: 40px;
-  text-shadow: -2px -2px 2px white, 2px -2px 2px white, 2px 2px 2px white, -2px 2px 2px white;
+  /*  max-width: calc(100vw - 10%);*/
+
 }
 
-div div:hover {
-  animation-play-state: paused;
+.table2,
+.table2 * {
+  border: 1px solid black;
+  border-collapse: collapse;
 }
 
-@keyframes coloranime {
-  from {
-    background-color: red;
-  }
-
-  50% {
-    background-color: green;
-  }
-
-  to {
-    background-color: blue;
-  }
+.table3,
+.table3 * {
+  border: 1px solid black;
+  border-spacing: 20px;
 }
-
-@keyframes rotateanime {
-  from {
-    transform: rotate(0deg)
-  }
-
-  to {
-    transform: rotate(180deg);
-  }
+.table4,
+.table4 * {
+  border: 1px solid black;
+  caption-side: bottom;
 }
-
-@keyframes scaleanime {
-  from {
-    transform: scale(1)
-  }
-
-  50% {
-    transform: scale(0.5);
-  }
-
-  to {
-    transform: scale(1)
-  }
-}
-
-div.card1 {
-  animation-name: coloranime;
-  animation-duration: 3s;
-}
-
-div.card2 {
-  animation-name: coloranime, scaleanime;
-  animation-duration: 3s, 6s;
-}
-
-div.card3 {
-  animation-name: coloranime, scaleanime;
-  animation-duration: 5s, 3s;
-  animation-timing-function: linear;
-  animation-iteration-count: infinite;
-}
-
-div.card4 {
-  animation-name: coloranime, rotateanime;
-  animation-duration: 3s, 2s;
-  animation-timing-function: linear;
-  animation-iteration-count: infinite;
-  animation-direction: alternate;
-}
-
-div.card5 {
-  animation-name: coloranime, rotateanime;
-  animation-duration: 6s, 2s;
-  animation-iteration-count: infinite;
-  animation-delay: 2s;
-}
-
-div.card6 {
-  animation: rotateanime 3s infinite linear;
+table4 caption{
+  color: red;
 }
