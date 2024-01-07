@@ -40,6 +40,6 @@ table {
   border: 1px solid black;
   caption-side: bottom;
 }
-table4 caption{
+table.table4 caption {
   color: red;
 }
