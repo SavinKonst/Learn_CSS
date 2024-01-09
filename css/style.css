@@ -1,49 +1,7 @@
-h1 {
-  text-align: center;
-}
-h4{
-  margin-bottom: 10px;
-}
-img {
-  width: 50px;
-}
-
-table,
-table *:not(img){
-  margin-left: auto;
-  margin-right: auto;
+.example{
+  font-size: 45px;
+  width: 100px;
   border: 1px solid black;
-}
-
-.table1,
-.table1 * {
-
-}
-
-.table2,
-.table2 * {
- /* border: 1px solid black;*/
-  border-collapse: collapse;
-}
-
-.table3,
-.table3 * {
-  border-spacing: 20px;
-}
-.table4,
-.table4 * {
-  caption-side: bottom;
-}
-table.table4 caption {
-  color: red;
-  font-size: larger;
-}
-.table5, 
-.table5 *{
-  text-align: right;
-  vertical-align: bottom;
-}
-.table6, 
-.table6 *{
-  empty-cells: hide;
+  min-height: 150px;
+  margin-left: 20px;
 }
