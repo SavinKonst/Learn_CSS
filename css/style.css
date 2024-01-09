@@ -1,7 +1,16 @@
-.example{
+div. {
   font-size: 45px;
   width: 100px;
   border: 1px solid black;
   min-height: 150px;
   margin-left: 20px;
+}
+
+.example2{
+  overflow: hidden;
+}
+
+.example3 {
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
