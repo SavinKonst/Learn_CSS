@@ -1,16 +1,49 @@
-div. {
-  font-size: 45px;
-  width: 100px;
-  border: 1px solid black;
-  min-height: 150px;
+h4 {
+  text-indent: -20px;
   margin-left: 20px;
+  margin-bottom: 5px;
 }
 
-.example2{
+div {
+  min-height: 150px;
+  margin-left: 20px;
   overflow: hidden;
+}
+
+div.narrow {
+  font-size: 45px;
+  width: 100px;
+  border: 2px solid darkred;
+}
+
+div.wide {
+  font-size: 30px;
+  width: 150px;
+  border: 2px solid indianred;
+}
+
+
+div.example1 {
+  overflow: visible;
 }
 
 .example3 {
-  overflow: hidden;
   text-overflow: ellipsis;
+}
+
+.example4 {
+  text-overflow: clip;
+}
+
+
+.example5 {
+  white-space: nowrap;
+}
+.example6.before{
+  display: inline-block;
+  
+}
+.example6.after{
+  display: inline-block;
+  
 }
