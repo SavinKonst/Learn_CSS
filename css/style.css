@@ -4,27 +4,54 @@ h4 {
   margin-bottom: 5px;
 }
 
+@keyframes border-before {
+  from {
+    border: 3px solid transparent;
+  }
+
+  to {
+    border: 3px solid #DB0E0E;
+  }
+}
+
+@keyframes border-after {
+  from {
+    border: 3px solid transparent;
+  }
+
+  to {
+    border: 3px solid green;
+  }
+}
+
 div {
   min-height: 150px;
   margin-left: 20px;
-  overflow: hidden;
+
 }
 
 div.narrow {
   font-size: 45px;
   width: 100px;
-  border: 2px solid darkred;
 }
 
 div.wide {
   font-size: 30px;
   width: 150px;
-  border: 2px solid indianred;
 }
 
-
-div.example1 {
+.before {
   overflow: visible;
+  animation: 0.5s border-before linear alternate infinite;
+  display: inline-block;
+
+
+}
+
+.after {
+  animation: 0.5s border-after 0.5s linear alternate infinite;
+  overflow: hidden;
+
 }
 
 .example3 {
@@ -36,14 +63,6 @@ div.example1 {
 }
 
 
-.example5 {
+.example5.after {
   white-space: nowrap;
-}
-.example6.before{
-  display: inline-block;
-  
-}
-.example6.after{
-  display: inline-block;
-  
 }
