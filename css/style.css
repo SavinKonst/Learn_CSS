@@ -27,6 +27,7 @@ h4 {
 div {
   min-height: 150px;
   margin-left: 20px;
+  display: inline-block;
 
 }
 
@@ -43,9 +44,9 @@ div.wide {
 .before {
   overflow: visible;
   animation: 0.5s border-before linear alternate infinite;
-  display: inline-block;
-
-
+  opacity: 50%;
+  position: relative;
+  left: 75px
 }
 
 .after {
