@@ -1,30 +1,61 @@
 <!-- CSS3 #21 Текстовые эффекты и многоколоночный текст (Text Effects & Multi Columns Text) -->
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>CSS3 #21 Text Effects & Multi Columns Text</title>
-    <link rel="stylesheet" href="css/style.css" />
-  </head>
 
-  <body>
-    <h1>Lesson#21 Text Effects & Multi Columns Text</h1>
-    <h4>1. Text extends beyond block border<br />overflow: visible</h4>
-    <div class="narrow before">CSS is Awesome</div>
-    <h4>2. overflow: hidden</h4>
-    <div class="narrow example2 after">CSS is Awesome</div>
-    <div class="narrow before">CSS is Awesome</div>
-    <h4>3. overflow: hidden; <br />text-overflow: ellipsis;</h4>
-    <div class="narrow example3 after">CSS is Awesome</div>
-    <div class="narrow before">CSS is Awesome</div>
-    <h4>4. overflow: hidden; <br />text-overflow: clip</h4>
-    <div class="narrow example4 after">CSS is Awesome</div>
-    <div class="narrow before">CSS is Awesome</div>
-    <h4>5. wide block<br />text-overflow: ellipsis;</h4>
-    <div class="wide example5 after">CSS is Awesome</div>
-    <h4>6. <br />text-overflow: ellipsis;</h4>
-    <div class="wide example6 after">Before<br />CSS is Awesome</div>
-    <div class="wide example6 before">After<br />CSS is Awesome</div>
-  </body>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CSS3 #21 Text Effects & Multi Columns Text</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+  <h1>Lesson#21 Text Effects & Multi Columns Text</h1>
+  <h4>1. Text extends beyond block border<br />overflow: visible</h4>
+  <div class="narrow example1 before">CSS is Awesome</div>
+  <h4>2. overflow: hidden</h4>
+  <div class="narrow example2 after">CSS is Awesome</div>
+  <div class="narrow before">CSS is Awesome</div>
+  <h4>3. overflow: hidden; <br />text-overflow: ellipsis;</h4>
+  <div class="narrow example3 after">CSS is Awesome</div>
+  <div class="narrow before">CSS is Awesome</div>
+  <h4>4. overflow: hidden; <br />text-overflow: clip</h4>
+  <div class="narrow example4 after">CSS is Awesome</div>
+  <div class="narrow before">CSS is Awesome</div>
+  <h4>5. wide block<br />text-overflow: ellipsis;<br>white-space: nowrap</h4>
+  <div class="wide example5 after">CSS is Awesome</div>
+  <div class="wide before">CSS is Awesome</div>
+  <h4>6. word-wrap: break-word;</h4>
+  <div class="wide example6 after">CSSisAwesome</div>
+  <div class="wide before">CSSisAwesome</div>
+  <h4>7. word-wrap: break-word;<br>
+    word-break: break-all;<br>
+    writing-mode: vertical-rl;</h4>
+  <div class="wide example7 after">CSS is Awesome</div>
+  <div class="wide before">CSS is Awesome</div>
+  <h3>Multicolumn text:</h3>
+  <p>column-count: 3 <br> column-gap: 30px;
+  </p>
+  <div class="container1">
+    <h4>Title1</h4>
+    <p>A paragraph (from Ancient Greek παράγραφος (parágraphos) 'to write beside') is a self-contained unit of discourse in writing dealing with a particular point or idea. Though not required by the orthographic conventions of any language with a writing system, paragraphs are a conventional means of organizing extended segments of prose.</p>
+    <h4>Title1</h4>
+    <p>A paragraph (from Ancient Greek παράγραφος (parágraphos) 'to write beside') is a self-contained unit of discourse in writing dealing with a particular point or idea. Though not required by the orthographic conventions of any language with a writing system, paragraphs are a conventional means of organizing extended segments of prose.</p>
+    <h4>Title1</h4>
+    <p>A paragraph (from Ancient Greek παράγραφος (parágraphos) 'to write beside') is a self-contained unit of discourse in writing dealing with a particular point or idea. Though not required by the orthographic conventions of any language with a writing system, paragraphs are a conventional means of organizing extended segments of prose.</p>
+  </div>
+  <p> column-rule: 1px solid black; <br>
+    column-width: 70px;</p>
+
+  <div class="container2">
+    <h4>Title1</h4>
+    <p>A paragraph (from Ancient Greek παράγραφος (parágraphos) 'to write beside') is a self-contained unit of discourse in writing dealing with a particular point or idea. Though not required by the orthographic conventions of any language with a writing system, paragraphs are a conventional means of organizing extended segments of prose.</p>
+    <h4>Title1</h4>
+    <p>A paragraph (from Ancient Greek παράγραφος (parágraphos) 'to write beside') is a self-contained unit of discourse in writing dealing with a particular point or idea. Though not required by the orthographic conventions of any language with a writing system, paragraphs are a conventional means of organizing extended segments of prose.</p>
+    <h4>Title1</h4>
+    <p>A paragraph (from Ancient Greek παράγραφος (parágraphos) 'to write beside') is a self-contained unit of discourse in writing dealing with a particular point or idea. Though not required by the orthographic conventions of any language with a writing system, paragraphs are a conventional means of organizing extended segments of prose.</p>
+  </div>
+
+</body>
+
 </html>
