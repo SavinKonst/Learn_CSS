@@ -26,7 +26,7 @@ input {
 }
 
 ::-webkit-scrollbar-thumb {
-   ! ! ! background: linear-gradient();
+  background: repeating-linear-gradient(rgb(255, 160, 160), rgb(155, 155, 255) 50px);
   border: 1px solid brown;
 }
 
