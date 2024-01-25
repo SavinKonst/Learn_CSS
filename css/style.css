@@ -1,5 +1,6 @@
-bogy {
+body {
   overflow: hidden;
+  margin: 0px;
 }
 
 /* Placeholder style */
@@ -21,7 +22,10 @@ input {
 
 .viewport {
   height: 100vh;
+  padding-left: 10px;
+  padding-right: 10px;
   overflow: auto;
+
 }
 
 .box {
@@ -33,23 +37,33 @@ input {
 .button {
   width: 100px;
   height: 100px;
-  border: none;
+  padding: 0px;
+  border: 5px solid white;
   border-radius: 50%;
+  margin: 3px;
   background-color: initial;
-  background-image: url(/pictures/button.png);
+  background-image: url(button.png);
   background-position: right;
   background-size: 220%;
   cursor: pointer;
 }
 
+.button:hover {
+  border: 5px solid rgb(102, 255, 0);
+}
+
 .button:active {
   background-position: left;
-  ;
+  border: 2px solid white;
 }
 
 /* Scroll styles */
+body::-webkit-scrollbar {
+  display: none;
+}
+
 ::-webkit-scrollbar {
-  background-color: black;
+  background-color: blueviolet;
   width: 20px;
   border-radius: 10px;
 
